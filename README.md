@@ -1,4 +1,25 @@
-# 두 번째 교육용 개정판: 버튼, PWM, 초음파 과제, 가위바위보
+# 라즈베리파이 Python·ROS2 교육 예제
+
+## 새 추가 실습: MediaPipe 전신과 YOLO 위치·LED 5개
+
+기존 교육 폴더에 손·얼굴·전신 랜드마크 예제와 YOLO → ROS2 → LED 5개 가우시안 PWM 예제를 추가합니다. 기존 다른 예제와 가상환경을 유지합니다.
+
+실행 중인 실습을 종료하고 **Docker 밖 Pi OS 터미널**에서 다음 두 줄을 실행합니다(`sudo` 없이).
+
+```bash
+curl -fL https://raw.githubusercontent.com/WHLee-HGU/raspberry-pi-ros2-python-labs/main/add_vision_ros_examples.sh -o ~/add_vision_ros_examples.sh
+bash ~/add_vision_ros_examples.sh
+```
+
+MediaPipe 예제는 `~/pi_basics_6h/vision/mediapipe_landmarks.py`, 새 ROS2 예제는 `~/pi_basics_6h/ros2_yolo_position/`에 설치됩니다. 필요한 MediaPipe 모델도 준비합니다.
+
+**[추가 예제의 실행 명령·배선·코드 설명](ADDONS_README.md)**
+
+이번 두 예제만 추가하려면 위 명령을 사용합니다. 아래 `reset_course_v2.sh`는 기존 수업 코드를 전체 초기화하는 별도 작업입니다.
+
+---
+
+## 두 번째 교육용 개정판: 버튼, PWM, 초음파 과제, 가위바위보
 
 이 버전은 이미 배포한 수업용 SD카드의 코드를 초기화하고 새 예제로 바꿉니다.
 수업용 OS·패키지·Docker 이미지가 준비된 Raspberry Pi OS Bookworm 64비트가 필요합니다.
